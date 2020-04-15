@@ -46,7 +46,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="detailLabel" destination="d5o-c2-fZt" id="HuW-RG-AWZ"/>
-                                    <outlet property="thumbnailImage" destination="bOI-YR-CHl" id="9dJ-uc-FMV"/>
+                                    <outlet property="thumbnailImage" destination="bOI-YR-CHl" id="qcM-fJ-WaS"/>
                                     <outlet property="titleLabel" destination="2PQ-bR-hEk" id="DB2-XD-KRq"/>
                                 </connections>
                             </tableViewCell>
@@ -56,25 +56,43 @@
                             <outlet property="delegate" destination="Q1Z-rH-Gc0" id="fZ5-zs-W4f"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="sjX-A3-r6w"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toWebViewController" id="kaT-IH-Ycs"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Z1-Am-Cla" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-533.33333333333337" y="127.90178571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WebViewController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5o-Jo-Yet">
+                                <rect key="frame" x="0.0" y="41" width="414" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="webview" destination="T5o-Jo-Yet" id="NWV-Bv-YfL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="128"/>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
         </scene>
     </scenes>
 </document>

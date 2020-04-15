@@ -104,7 +104,7 @@ class RSSTableViewController: UITableViewController {
     
     
     
-    /// TableViewセル設定
+    /// TableViewセル設定(初期表示時)
     /// - Parameters:
     ///   - tableView: <#tableView description#>
     ///   - indexPath: <#indexPath description#>
@@ -128,6 +128,30 @@ class RSSTableViewController: UITableViewController {
     }
     
     
+    /// tableviewセル選択時イベント
+    /// - Parameters:
+    ///   - tableView: <#tableView description#>
+    ///   - indexPath: <#indexPath description#>
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // タップされたセルの行番号を出力
+        print("\(indexPath.row)番目の行が選択されました。")
+        performSegue(withIdentifier: "toWebViewController",sender: self.items[indexPath.row].link)
+    }
+    
+    
+    
+    /// 画面遷移時のsenderパラメータ設定
+    /// - Parameters:
+    ///   - segue: <#segue description#>
+    ///   - sender: <#sender description#>
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toWebViewController" {
+            let webViewController = segue.destination as! WebViewController
+            webViewController.targetUri = sender as! String
+        }
+    }
+    
+    /// RSSデータ読込
     func loadData(){
         RssClient.fetchItems(urlString: self.newsType.urlStr, completion: { (response) in
             switch response {
@@ -140,6 +164,8 @@ class RSSTableViewController: UITableViewController {
             }
         })
     }
+    
+
     
     /*
      // Override to support conditional editing of the table view.
