@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -58,7 +58,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="sjX-A3-r6w"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toWebViewController" id="kaT-IH-Ycs"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toWebViewController" id="Hf3-mb-hB8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Z1-Am-Cla" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -73,8 +73,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyI-hN-6Mf">
+                                <rect key="frame" x="5" y="4" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt; 戻る"/>
+                                <connections>
+                                    <action selector="buttonReturnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ame-bs-Ybd"/>
+                                </connections>
+                            </button>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5o-Jo-Yet">
-                                <rect key="frame" x="0.0" y="41" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="754"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -86,7 +94,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EoW-ZR-xDv"/>
                     <connections>
+                        <outlet property="buttonReturn" destination="XyI-hN-6Mf" id="uwI-Yb-bsf"/>
                         <outlet property="webview" destination="T5o-Jo-Yet" id="NWV-Bv-YfL"/>
                     </connections>
                 </viewController>

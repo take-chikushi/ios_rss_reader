@@ -147,7 +147,8 @@ class RSSTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toWebViewController" {
             let webViewController = segue.destination as! WebViewController
-            webViewController.targetUri = sender as! String
+            guard let unwrapped = sender else { return }
+            webViewController.targetUri = unwrapped as? String
         }
     }
     

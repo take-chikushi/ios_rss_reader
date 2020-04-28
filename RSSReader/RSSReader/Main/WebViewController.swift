@@ -12,19 +12,30 @@ import WebKit
 class WebViewController: UIViewController {
 
     @IBOutlet weak var webview: WKWebView!
+    @IBOutlet weak var buttonReturn: UIButton!
     
     // URL
     var targetUri:String!
+    
     /// 画面表示後の処理
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.addSubview(buttonReturn)
+        // ページ読込
         let myURL = URL(string: targetUri)
         let myRequest = URLRequest(url: myURL!)
         webview.load(myRequest)
+        
+        // SwipeBack処理設定
+        setSwipeBack()
     }
     
 
+    @IBAction func buttonReturnTapped(_ sender: Any) {
+        // self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
