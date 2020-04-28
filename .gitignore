@@ -1,92 +1,90 @@
-RSSReader/Podfile.lock
-RSSReader/Pods/Manifest.lock
-RSSReader/Pods/HTMLReader/LICENSE
-RSSReader/Pods/HTMLReader/README.md
-RSSReader/Pods/HTMLReader/Sources/HTMLComment.m
-RSSReader/Pods/HTMLReader/Sources/HTMLDocument.m
-RSSReader/Pods/HTMLReader/Sources/HTMLDocumentType.m
-RSSReader/Pods/HTMLReader/Sources/HTMLElement.m
-RSSReader/Pods/HTMLReader/Sources/HTMLEncoding.m
-RSSReader/Pods/HTMLReader/Sources/HTMLEntities.m
-RSSReader/Pods/HTMLReader/Sources/HTMLNode.m
-RSSReader/Pods/HTMLReader/Sources/HTMLOrderedDictionary.m
-RSSReader/Pods/HTMLReader/Sources/HTMLParser.m
-RSSReader/Pods/HTMLReader/Sources/HTMLPreprocessedInputStream.m
-RSSReader/Pods/HTMLReader/Sources/HTMLSelector.m
-RSSReader/Pods/HTMLReader/Sources/HTMLSerialization.m
-RSSReader/Pods/HTMLReader/Sources/HTMLString.m
-RSSReader/Pods/HTMLReader/Sources/HTMLTextNode.m
-RSSReader/Pods/HTMLReader/Sources/HTMLTokenizer.m
-RSSReader/Pods/HTMLReader/Sources/HTMLTreeEnumerator.m
-RSSReader/Pods/HTMLReader/Sources/NSString+HTMLEntities.m
-RSSReader/Pods/HTMLReader/Sources/include/HTMLComment.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLDocument+Private.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLDocument.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLDocumentType.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLElement.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLEncoding.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLEntities.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLNamespace.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLNode.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLOrderedDictionary.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLParser.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLPreprocessedInputStream.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLQuirksMode.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLReader.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLSelector.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLSerialization.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLString.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLSupport.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLTextNode.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLTokenizer.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLTokenizerState.h
-RSSReader/Pods/HTMLReader/Sources/include/HTMLTreeEnumerator.h
-RSSReader/Pods/HTMLReader/Sources/include/NSString+HTMLEntities.h
-RSSReader/Pods/Pods.xcodeproj/project.pbxproj
-RSSReader/Pods/Pods.xcodeproj/xcuserdata/chikushi.xcuserdatad/xcschemes/HTMLReader.xcscheme
-RSSReader/Pods/Pods.xcodeproj/xcuserdata/chikushi.xcuserdatad/xcschemes/Pods-RSSReader-RSSReaderUITests.xcscheme
-RSSReader/Pods/Pods.xcodeproj/xcuserdata/chikushi.xcuserdatad/xcschemes/Pods-RSSReader.xcscheme
-RSSReader/Pods/Pods.xcodeproj/xcuserdata/chikushi.xcuserdatad/xcschemes/Pods-RSSReaderTests.xcscheme
-RSSReader/Pods/Pods.xcodeproj/xcuserdata/chikushi.xcuserdatad/xcschemes/xcschememanagement.plist
-RSSReader/Pods/Target Support Files/HTMLReader/HTMLReader-dummy.m
-RSSReader/Pods/Target Support Files/HTMLReader/HTMLReader-Info.plist
-RSSReader/Pods/Target Support Files/HTMLReader/HTMLReader-prefix.pch
-RSSReader/Pods/Target Support Files/HTMLReader/HTMLReader-umbrella.h
-RSSReader/Pods/Target Support Files/HTMLReader/HTMLReader.modulemap
-RSSReader/Pods/Target Support Files/HTMLReader/HTMLReader.xcconfig
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader-acknowledgements.markdown
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader-acknowledgements.plist
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader-dummy.m
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader-frameworks-Debug-input-files.xcfilelist
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader-frameworks-Debug-output-files.xcfilelist
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader-frameworks-Release-input-files.xcfilelist
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader-frameworks-Release-output-files.xcfilelist
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader-frameworks.sh
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader-Info.plist
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader-umbrella.h
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader.debug.xcconfig
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader.modulemap
-RSSReader/Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader.release.xcconfig
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests-acknowledgements.markdown
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests-acknowledgements.plist
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests-dummy.m
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests-frameworks-Debug-input-files.xcfilelist
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests-frameworks-Debug-output-files.xcfilelist
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests-frameworks-Release-input-files.xcfilelist
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests-frameworks-Release-output-files.xcfilelist
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests-frameworks.sh
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests-Info.plist
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests-umbrella.h
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests.debug.xcconfig
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests.modulemap
-RSSReader/Pods/Target Support Files/Pods-RSSReader-RSSReaderUITests/Pods-RSSReader-RSSReaderUITests.release.xcconfig
-RSSReader/Pods/Target Support Files/Pods-RSSReaderTests/Pods-RSSReaderTests-acknowledgements.markdown
-RSSReader/Pods/Target Support Files/Pods-RSSReaderTests/Pods-RSSReaderTests-acknowledgements.plist
-RSSReader/Pods/Target Support Files/Pods-RSSReaderTests/Pods-RSSReaderTests-dummy.m
-RSSReader/Pods/Target Support Files/Pods-RSSReaderTests/Pods-RSSReaderTests-Info.plist
-RSSReader/Pods/Target Support Files/Pods-RSSReaderTests/Pods-RSSReaderTests-umbrella.h
-RSSReader/Pods/Target Support Files/Pods-RSSReaderTests/Pods-RSSReaderTests.debug.xcconfig
-RSSReader/Pods/Target Support Files/Pods-RSSReaderTests/Pods-RSSReaderTests.modulemap
-RSSReader/Pods/Target Support Files/Pods-RSSReaderTests/Pods-RSSReaderTests.release.xcconfig
-RSSReader/RSSReader/UIViewControllerExtension.swift
-RSSReader/RSSReader.xcodeproj/xcshareddata/xcschemes/RSSReader.xcscheme
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
