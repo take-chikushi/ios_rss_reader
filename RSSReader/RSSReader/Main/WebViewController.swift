@@ -12,7 +12,6 @@ import WebKit
 class WebViewController: UIViewController {
 
     @IBOutlet weak var webview: WKWebView!
-    @IBOutlet weak var buttonReturn: UIButton!
     
     // URL
     var targetUri:String!
@@ -20,8 +19,6 @@ class WebViewController: UIViewController {
     /// 画面表示後の処理
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.addSubview(buttonReturn)
         // ページ読込
         let myURL = URL(string: targetUri)
         let myRequest = URLRequest(url: myURL!)

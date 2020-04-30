@@ -14,7 +14,7 @@ import Foundation
 class RSSTableViewController: UITableViewController {
     
     /// 取得情報
-    private var newsType: NewsType = .main
+    private var newsType: NewsType = .it
     /// 記事一覧
     private var items: [Item] = [] {
         didSet {
@@ -135,7 +135,7 @@ class RSSTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // タップされたセルの行番号を出力
         print("\(indexPath.row)番目の行が選択されました。")
-        performSegue(withIdentifier: "toWebViewController",sender: self.items[indexPath.row].link)
+        self.performSegue(withIdentifier: "toWebViewController",sender: self.items[indexPath.row].link)
     }
     
     
